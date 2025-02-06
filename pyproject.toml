@@ -14,6 +14,9 @@ openpyxl = "^3.1.3"
 [tool.poetry.scripts]
 fitparse-csv = "fitparse_csv.cli:main"
 
+[tool.poetry.group.dev.dependencies]
+xlrd = "1.2.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

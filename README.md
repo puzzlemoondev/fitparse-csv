@@ -4,7 +4,7 @@ Simple `.FIT` to csv/xlsx converter using [python-fitparse](https://github.com/d
 
 ## Usage
 
-```
+```shell
 usage: fitparse-csv [-h] [-t {csv,xlsx}] [-r] [-f] dir
 
 fitparse csv converter
@@ -26,3 +26,7 @@ optional arguments:
 poetry install
 poetry run fitparse-csv -h
 ```
+
+### Update fitparse profile
+
+After `poetry install`, you can run `./update_profile.sh` to update sdk profile if needed.
