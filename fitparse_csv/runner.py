@@ -3,7 +3,7 @@ from pathlib import Path
 from fitparse_csv.converter import Converter
 
 
-class FitparseCsv:
+class Runner:
     def __init__(self, input_dir: Path, converter: Converter):
         self.input_dir = input_dir.resolve(strict=True)
         self.converter = converter

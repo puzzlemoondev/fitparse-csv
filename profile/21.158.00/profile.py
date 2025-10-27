@@ -5,15 +5,14 @@
 # ********* PARSED 180 TYPES (3655 VALUES), 119 MESSAGES (1382 FIELDS) *********
 
 from fitparse.records import (
+    BASE_TYPES,
     ComponentField,
     Field,
     FieldType,
     MessageType,
     ReferenceField,
     SubField,
-    BASE_TYPES,
 )
-
 
 FIELD_NUM_TIMESTAMP = 253
 

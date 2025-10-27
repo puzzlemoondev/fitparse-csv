@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-package_path=$(find "$(poetry env info --path | tail -n 1)" -type d -name fitparse)
+package_path=$(find .venv -type d -name fitparse | tail -n 1)
 if [ -z "$package_path" ]; then
   echo "fitparse package not found"
   exit 1

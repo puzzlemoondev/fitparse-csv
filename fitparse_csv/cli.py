@@ -2,10 +2,10 @@ import argparse
 from pathlib import Path
 
 from fitparse_csv.converter import ConverterFactory
-from fitparse_csv.fitparse_csv import FitparseCsv
+from fitparse_csv.runner import Runner
 
 
-def main():
+def cli():
     parser = argparse.ArgumentParser(description="fitparse csv converter")
     parser.add_argument(
         "dir",
@@ -33,9 +33,6 @@ def main():
     converter = ConverterFactory.create(
         args.type, remove_unknown=args.remove_unknown, overwrite=args.force
     )
-    run = FitparseCsv(args.dir, converter)
+
+    run = Runner(args.dir, converter)
     run()
-
-
-if __name__ == "__main__":
-    main()

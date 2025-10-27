@@ -23,10 +23,9 @@ optional arguments:
 ## Installation
 
 ```bash
-poetry install
-poetry run fitparse-csv -h
+uv run fitparse_csv --help
 ```
 
 ### Update fitparse profile
 
-After `poetry install`, you can run `./update_profile.sh` to update sdk profile if needed.
+You can run `./update_profile.sh` to update sdk profile if needed.
