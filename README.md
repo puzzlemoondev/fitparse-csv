@@ -28,4 +28,4 @@ uv run fitparse_csv --help
 
 ### Update fitparse profile
 
-You can run `./update_profile.sh` to update sdk profile if needed.
+After installation, you can run `uv run update_profile.py` to update sdk profile if needed.
