@@ -1,4 +1,5 @@
 # /// script
+# requires-python = ">=3.4"
 # dependencies = [
 #     "packaging",
 # ]
